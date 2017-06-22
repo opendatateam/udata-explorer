@@ -33,12 +33,12 @@ print(dataset.resources)
 [<ZipResource>("Tous les jeux de données de 1958 à 2012 au format XLS en une archive"), <CSVResource>("Résultats des législatives par circonscription 1958 1er tour (23 novembre 1958)"), ...]
 ```
 
-Resources can be filtered based on their type. CSV can be cleaned with [CSV Detective][csv-detective] for example.
+Resources can be filtered based on their type. CSV can be analyzed with [CSV Detective][csv-detective] for example.
 
 ```python
 resource = dataset.get_resources(type = CSVResource).first
 data = resource.get_data()
-cleaned_data = CSVDetective(data)
+introspection = CSVDetective(data)
 ```
 
 [Pandas dataframe][dataframe] are awesome to process data.
