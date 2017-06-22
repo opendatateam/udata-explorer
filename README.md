@@ -59,4 +59,4 @@ TBD.
 
 [udata]: https://github.com/opendatateam/udata
 [csv-detective]: https://github.com/etalab/csv_detective
-[dataframe]: pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
+[dataframe]: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
