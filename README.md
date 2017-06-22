@@ -45,7 +45,6 @@ cleaned_data = CSVDetective(data)
 
 ```
 print(data.head())
-df.head()
    Code département département  circonscription  Inscrits  Votants  Exprimés
 0               NaN         NaN              NaN       NaN      NaN       NaN
 1               1.0         AIN              1.0   67589.0  43001.0   42157.0
