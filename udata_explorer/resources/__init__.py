@@ -12,6 +12,6 @@ def instantiate_resource(r_type, resource_dict):
     """
     if r_type:
         if r_type.lower() == 'csv':
-            return CSVResource(**resource_dict)
+            return CSVResource(resource_dict)
 
-    return BaseResource(**resource_dict)
+    return BaseResource(resource_dict)

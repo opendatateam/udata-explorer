@@ -2,7 +2,7 @@
 
 
 class HydratableObject(object):
+    """A mixin to hold some dict data in `data` attribute"""
 
-    def __init__(self, **kwargs):
-        for key in kwargs:
-            setattr(self, key, kwargs[key])
+    def __init__(self, data):
+        self.data = data

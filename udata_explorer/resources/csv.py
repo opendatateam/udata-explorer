@@ -11,6 +11,6 @@ class CSVResource(BaseResource):
         """
         Load CSV data into a Panda dataframe
         """
-        if not self.url:
+        if not self.data.get('url'):
             raise Exception('Missing resource url')
-        return pd.read_csv(self.url)
+        return pd.read_csv(self.data['url'])

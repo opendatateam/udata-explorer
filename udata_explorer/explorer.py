@@ -23,7 +23,7 @@ class Explorer(object):
         if r.status_code != 200:
             raise Exception('Error fetching datasets (%s)' % kwargs)
         return [
-            Dataset(**d) for d in r.json()['data']
+            Dataset(d) for d in r.json()['data']
         ]
 
     def get_dataset(self, d_id):
@@ -34,4 +34,4 @@ class Explorer(object):
         r = requests.get('{}/datasets/{}/'.format(self.base_url, d_id))
         if r.status_code != 200:
             raise Exception('Error fetching dataset w/ id %s' % d_id)
-        return Dataset(**r.json())
+        return Dataset(r.json())
