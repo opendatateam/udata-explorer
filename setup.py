@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='udata-explorer',
-    version='0.1',
+    version='0.2',
     description="Explore udata instances' data",
     url='https://github.com/opendatateam/udata-explorer',
     author='Alexandre Bulté',
